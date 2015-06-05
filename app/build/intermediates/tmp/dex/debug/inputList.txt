@@ -1,0 +1,4 @@
+/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/classes/debug
+/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/GraphView-3.1.1-21b6a8d3229802cbbe6378f332e0bbe0c1cbae41.jar
+/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/d2xx-adbf54af816035a8d86f2dc8c4fbc19cc5ba27e3.jar
+/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-3d6c5c3d28e8cd85b631ed63a0e241b069f8e41d.jar

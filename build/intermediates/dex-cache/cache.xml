@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/victorcomp/AndroidstudioProjects/Spectrometer/app/libs/GraphView-3.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fde5ac3b4d45761447598d87b4c43cc4d143890a">
+        <dex dex="/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/GraphView-3.1.1-21b6a8d3229802cbbe6378f332e0bbe0c1cbae41.jar" />
+    </item>
+    <item
+        jar="/home/victorcomp/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-3d6c5c3d28e8cd85b631ed63a0e241b069f8e41d.jar" />
+    </item>
+    <item
+        jar="/home/victorcomp/AndroidstudioProjects/Spectrometer/app/libs/d2xx.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="549d88cce99830dc2ae951a13d5a8b897362351b">
+        <dex dex="/home/victorcomp/AndroidstudioProjects/Spectrometer/app/build/intermediates/pre-dexed/debug/d2xx-adbf54af816035a8d86f2dc8c4fbc19cc5ba27e3.jar" />
+    </item>
+
+</items>

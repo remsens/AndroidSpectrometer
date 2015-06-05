@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp"
+	android:paddingTop="10dp"
+	android:paddingBottom="20dp">
+
+	<TextView
+	    android:id="@+id/current_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerInParent="true"
+	    android:text="12"
+	    android:textSize="23sp" />
+		
+	<SeekBar
+	    android:id="@+id/seek_bar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/current_value"
+	    android:layout_marginTop="10dp" />
+
+	<TextView
+	    android:id="@+id/max_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/seek_bar"
+	    android:layout_alignRight="@+id/seek_bar"
+	    android:text="0" />
+
+	<TextView
+	    android:id="@+id/min_value"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/seek_bar"
+	    android:layout_alignLeft="@+id/seek_bar"
+	    android:text="0" />
+
+	<ToggleButton
+	    android:id="@+id/is_auto_expossure"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignRight="@+id/seek_bar"
+	    android:layout_below="@+id/seek_bar"
+	    android:textOff="Автоматически"
+	    android:textOn="Автоматически" />
+				
+</RelativeLayout>
+<!-- From: file:/home/victorcomp/AndroidstudioProjects/Spectrometer/app/src/main/res/layout/dialog_slider.xml -->

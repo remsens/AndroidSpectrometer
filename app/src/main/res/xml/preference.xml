@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:example="http://schemas.android.com/apk/res/by.remsens.spectrometer">
+    <EditTextPreference 
+        android:title="Количество спектров для усреднения"
+         android:key="SpectrumSplitNumber"
+         android:summary="10"
+          android:defaultValue="10"
+          
+          android:inputType="number"/>
+    <by.remsens.spectrometer.SeekBarPreference
+        
+        android:title="Время экпозиции в мс"
+        android:dialogTitle="Установка времени экспозиции в мс"
+        android:summary="Автоматически"
+        android:persistent="true"
+        android:defaultValue="Автоматически"
+        example:minValue="15"
+        example:maxValue="1000"
+        example:isAuto="true"
+        
+        />
+    <PreferenceScreen
+        android:key="screen"
+ 		android:summary="Положение и размеры рамки поля видимости спектрометра"
+ 		android:title="Настройки рамки поля видимости">
+        <PreferenceCategory android:title="Верхний правый угол">
+            <EditTextPreference android:title="по горизонтали" android:summary="dpi" android:key="FrameX1" android:inputType="number"/>
+            <EditTextPreference android:summary="dpi" android:title="по вертикали" android:key="FrameY1" android:inputType="number"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Нижний левый угол">
+            <EditTextPreference android:title="по горизонтали" android:summary="dpi" android:key="FrameX2" android:inputType="number"/>
+            <EditTextPreference android:title="по  вертикали" android:summary="dpi" android:key="FrameY2" android:inputType="number"/>
+        </PreferenceCategory>
+        
+    </PreferenceScreen>
+    
+
+</PreferenceScreen>

@@ -1,0 +1,92 @@
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/LiveSpectrumWidget"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="N xx.xx, E xx.xx"
+            android:id="@+id/CoordinateLabel"
+            android:background="#ff00ffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="XY xx, YZ yy, XZ zz"
+            android:id="@+id/RotateLabel"
+            android:background="#ff00ffff" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/controls_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <View
+                android:id="@+id/rect_bottom_face"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:background="#000000"
+                android:layout_alignParentLeft="false" />
+
+            <View
+                android:id="@+id/rect_right_face"
+                android:layout_width="4dp"
+                android:layout_height="100dp"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/rect_top_face"
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/rect_left_face"
+                android:layout_width="4dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/captureBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/camera"
+                android:gravity="left|center_vertical"
+                android:onClick="logSensorData"
+                android:text="Снять" />
+
+                <ZoomControls
+                    android:id="@+id/CAMERA_ZOOM_CONTROLS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/captureBtn"
+                    android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+           
+
+    </FrameLayout>
+
+</LinearLayout>
